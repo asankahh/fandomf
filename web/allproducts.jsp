@@ -1,11 +1,15 @@
-<%@ page import="java.util.List" %><%--
+<%@ page import="java.sql.ResultSet" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%--
   Created by IntelliJ IDEA.
   User: asank
   Date: 4/4/2016
   Time: 2:08 PM
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <html>
 <head>
     <title>Categories</title>
@@ -66,7 +70,6 @@
 
 <div class="container">
     <div class="row">
-
         <div class="col-md-10">
             <div class="input-field col-md-3">
                 <select class="icons" title="cat">
@@ -90,50 +93,69 @@
 </div>
 
 <br/>
+<table border="0" id="prdct">
+    <tr>
+        <c:forEach var="columnName" items="${result.columnNames}">
+            <th><c:out value="${columnName}"/> </th>
+        </c:forEach>
+    </tr>
+    <c:forEach var="row" items="${result.rowsByIndex}">
+        <tr>
+            <c:forEach var="column" items="${row}">
+                <td><c:out value="${column}"/></td>
+            </c:forEach>
+        </tr>
+    </c:forEach>
+</table>
+<script>
+    var ptbl = document.getElementById('prdct').tBodies[0];
+    for(var r=0,n=ptbl.rows.length;r<n;r++){
+        for(var c=0,m=ptbl.rows[r].cells.length; c<m; c++){
+            if(ptbl.rows[r].cells[c].childNodes[0].value){
+                var nm0 = ptbl.rows[0].cells[1].innerHTML;
+                var dsc0= ptbl.rows[0].cells[2].innerHTML;
+                document.getElementById("nm0").innerHTML=nm0;
+                document.getElementById("nmin0").innerHTML=nm0;
+                document.getElementById("dsc0").innerHTML=dsc0
+            }
+        }
+    }
+</script>
+
 <br/>
 
-<%List prdList = (List) session.getAttribute("prdtList"); %>
-
-
 <div class="container">
-    <%=prdList%>
-    <%--<forEach items="${prdList}" var="prdt">--%>
-        <div class="row">
-            <div class="col-sm-4">
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="http://materializecss.com/images/sample-1.jpg">
+
+    <div class="row">
+        <% ResultSet rs = (ResultSet)request.getAttribute("rs");
+            while (rs.next()){ %>
+        <div class="col-sm-4">
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="http://materializecss.com/images/sample-1.jpg">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4" id="nm10"><i class="material-icons right">more_vert</i></span>
+                    <div class="card-action">
+                        <a href="productview.jsp">
+                            <button class="waves-effect waves-teal btn-flat"><i class="material-icons"><%= rs.getString(1) %></i></button>
+                        </a>
+                        <a href="#">
+                            <button class="waves-effect waves-teal btn-flat"><span class="glyphicon glyphicon-bookmark"><%= rs.getString(2) %></span></button>
+                        </a>
+                        <a href="#">
+                            <button class="waves-effect waves-teal btn-flat"><span class="glyphicon glyphicon-shopping-cart"><%= rs.getString(3) %></span></button>
+                        </a>
                     </div>
-                    <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Special Offer 3<i
-                        class="material-icons right">more_vert</i></span>
-                        <div class="card-action">
-                            <a href="productview.jsp">
-                                <button class="waves-effect waves-teal btn-flat"><i
-                                        class="material-icons">info_outline</i>
-                                </button>
-                            </a>
-                            <a href="#">
-                                <button class="waves-effect waves-teal btn-flat"><span
-                                        class="glyphicon glyphicon-bookmark"></span></button>
-                            </a>
-                            <a href="#">
-                                <button class="waves-effect waves-teal btn-flat"><span
-                                        class="glyphicon glyphicon-shopping-cart"></span></button>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Special Offer 3<i
-                        class="material-icons right">close</i></span>
-                        <p>Sample Text Here.Here is some more information about this product that is only revealed once
-                            clicked on.</p>
-                    </div>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4" id="nmin0"><i class="material-icons right">close</i></span>
+                    <p id="dsc0"></p>
                 </div>
             </div>
         </div>
-    <%--</forEach>--%>
-
+    </div>
+    <% } %>
 </div>
 
 
@@ -142,5 +164,7 @@
         $('select').material_select();
     });
 </script>
+
+
 </body>
 </html>

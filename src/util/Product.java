@@ -9,6 +9,7 @@ public class Product {
     private String name;
     private String description;
     private String image;
+    private String ID;
 
 
     public void setId(int id) {
@@ -24,11 +25,10 @@ public class Product {
     }
 
     public void setImage(String image) {
-        this.image = image;
+         this.image = image;
     }
 
     public int getId() {
-
         return id;
     }
 
@@ -42,5 +42,13 @@ public class Product {
 
     public String getImage() {
         return image;
+    }
+
+    public String getID() {
+        return ID;
+    }
+
+    public void setID(String ID) {
+        this.ID = ID;
     }
 }
