@@ -1,0 +1,26 @@
+
+.formblock
+{
+    margin-top: 25px;
+    padding: 25px;
+    border-radius: 25px;
+    border: 2px solid #AEAEAE;
+}
+
+.loginblock
+{
+    margin-top: 35%;
+}
+
+.newuser
+{
+    margin-top: 20%;
+    background-image: url("new.png");
+    padding: 25px;
+    border: 2px solid #1f897f;
+}
+
+.owncontainer
+{
+    margin-top: 5%;
+}
