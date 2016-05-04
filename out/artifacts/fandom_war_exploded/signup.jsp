@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <%--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">--%>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <%--<link rel="stylesheet" type="text/css" href="css/bootstrap.css">--%>
     <%--<link rel="stylesheet" type="text/css" href="css/materialize.min.css">--%>
     <link rel="stylesheet" type="text/css" href="css/materialize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css" >
@@ -27,17 +27,17 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <%--<script type="text/javascript" src="js/bootstrap.min.js"></script>--%>
     <script type="text/javascript" src="js/materialize.min.js"></script>
 </head>
 <body>
 
-<div class="container-fluid">
+<div class="container">
     <div class="col-md-2"></div>
     <div class="col-md-8">
         <div class="container">
 
-            <form method="post" action="#" class="formblock">
+            <form method="post" action="S_signup" class="formblock">
 
                 <div class="row">
                     <div class="col s4">
@@ -50,10 +50,9 @@
                                 <input type="file" accept="*image/*" onchange="loadFile(event)">
                             </div>
                             <div class="file-path-wrapper">
-                                <input class="file-path validate" type="text">
+                                <input class="file-path validate" type="text" name="dp">
                             </div>
                         </div>
-                        <%--<input type="file" accept="*image/*" onchange="loadFile(event)">--%>
                     </div>
                 </div>
 
@@ -85,7 +84,7 @@
 
                 <div class="row">
                     <div class="input-field col s12">
-                        <input id="email" type="email" class="validate" placeholder="mostly use email">
+                        <input id="email" name="em" type="email" class="validate" placeholder="mostly use email">
                         <label for="email">Email</label>
                     </div>
                     <p>
@@ -126,7 +125,6 @@
                         <label for="ad2">Address</label>
                     </div>
                 </div>
-
                 <div class="row">
                     <div class="input-field col s12">
                         <input id="cty" type="text" name="cty" placeholder="City/Town" class="validate">
@@ -140,96 +138,54 @@
                         <label for="pcd">Postal Code</label>
                     </div>
                 </div>
-
                 <label for="gndr">Gender</label>
                 <div class="row" id="gndr">
                     <p class="col s4">
-                        <input class="with-gap" name="gndr" type="radio" id="male" />
+                        <input class="with-gap" name="gndr" type="radio" id="male" value="m" />
                         <label for="male">Male</label>
                     </p>
                     <p>
-                        <input class="with-gap" name="gndr" type="radio" id="female"  />
+                        <input class="with-gap" name="gndr" type="radio" id="female" value="f"  />
                         <label for="female">Female</label>
                     </p>
                 </div>
-
                 <div class="row">
                     <div class="input-field col s12">
-                        <input id="tp-h" type="tel" name="tp-h" placeholder="Home/Work" class="validate">
+                        <input id="tp-h" type="tel" name="tph" placeholder="Home/Work" class="validate">
                         <label for="tp-h">Telephone</label>
                     </div>
                 </div>
-
                 <div class="row">
                     <div class="input-field col s12">
-                        <input id="tp-m" type="tel" name="tp-m" placeholder="mobilephone" class="validate">
+                        <input id="tp-m" type="tel" name="tpm" placeholder="mobilephone" class="validate">
                         <label for="tp-m">Mobile Phone</label>
                     </div>
                 </div>
-
                 <div class="row">
                     <div class="col m5"><hr></div>
                     <button class="btn waves-effect waves-light" type="reset">
                         Clear Fields
                         <i class="material-icons right">clear_all</i>
                     </button>
-                    <button class="btn waves-effect waves-light" type="submit" onclick="Materialize.toast('Data Submitted', 3000, 'rounded') ">
+                    <button class="btn waves-effect waves-light" type="submit">
                         Submit
                         <i class="material-icons right">send</i>
                     </button>
                 </div>
+                <%String nt = (String) request.getAttribute("message");%>
+                <% if (nt != null){%>
+                <script>
+                    Materialize.toast('<%=request.getAttribute("message")%>', 3000, 'rounded')
+                </script>
 
-
+                <%}%>
             </form>
-
         </div>
     </div>
     <div class="col-md-2"></div>
 </div>
 
-<script>
-    $(document).ready(function() {
-        $('select').material_select();
-    });
-</script>
-<script>
-    var months=["January","February","March","April","May","June","July","August","September","October","November","December"];
-    var selm = document.getElementById('mnth');
-    var fragm = document.createDocumentFragment();
-
-    months.forEach(function (month,index) {
-        var optm = document.createElement('option');
-        optm.innerHTML=month;
-        optm.value=index;
-        fragm.appendChild(optm);
-    });
-    selm.appendChild(fragm);
-</script>
-<script>
-    var days=["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31"];
-    var sel=document.getElementById('dt');
-    var fragment = document.createDocumentFragment();
-
-    days.forEach(function (day,index) {
-        var opt = document.createElement('option');
-        opt.innerHTML=day;
-        opt.value=index;
-        fragment.appendChild(opt);
-    });
-    sel.appendChild(fragment);
-</script>
-<script>
-    var loadFile = function (event) {
-        var reader = new FileReader();
-        reader.onload = function () {
-            var output = document.getElementById('dpimg');
-            output.src = reader.result;
-        };
-        reader.readAsDataURL(event.target.files[0]);
-    };
-</script>
-
-
+<script type="text/javascript" src="js/my.js"></script>
 
 </body>
 </html>
