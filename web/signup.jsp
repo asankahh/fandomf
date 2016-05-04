@@ -40,7 +40,7 @@
             <form method="post" action="S_signup" class="formblock">
 
                 <div class="row">
-                    <div class="col s4">
+                    <div class="col s4" >
                         <img id="dpimg" src="#" alt="DP" class="circle responsive-img"> <!-- notice the "circle" class -->
                     </div>
                     <div class="file-field input-field col s8">
@@ -138,17 +138,20 @@
                         <label for="pcd">Postal Code</label>
                     </div>
                 </div>
-                <label for="gndr">Gender</label>
-                <div class="row" id="gndr">
-                    <p class="col s4">
-                        <input class="with-gap" name="gndr" type="radio" id="male" value="m" />
-                        <label for="male">Male</label>
-                    </p>
-                    <p>
-                        <input class="with-gap" name="gndr" type="radio" id="female" value="f"  />
-                        <label for="female">Female</label>
-                    </p>
+                <div class="row">
+                    <label for="gndr">Gender</label>
+                    <div class="row" id="gndr">
+                        <p class="col s4">
+                            <input class="with-gap" name="gndr" type="radio" id="male" value="m" />
+                            <label for="male">Male</label>
+                        </p>
+                        <p>
+                            <input class="with-gap" name="gndr" type="radio" id="female" value="f"  />
+                            <label for="female">Female</label>
+                        </p>
+                    </div>
                 </div>
+
                 <div class="row">
                     <div class="input-field col s12">
                         <input id="tp-h" type="tel" name="tph" placeholder="Home/Work" class="validate">

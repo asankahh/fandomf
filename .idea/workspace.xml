@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f344959a-d1ce-4440-b295-16ce4f88d7bb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/fandom_war_exploded/WEB-INF/classes/dbpack/C_dbcn.class" afterPath="$PROJECT_DIR$/out/artifacts/fandom_war_exploded/WEB-INF/classes/dbpack/C_dbcn.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/fandom/dbpack/C_dbcn.class" afterPath="$PROJECT_DIR$/out/production/fandom/dbpack/C_dbcn.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/fandom_war_exploded/WEB-INF/classes/main/S_signup.class" afterPath="$PROJECT_DIR$/out/artifacts/fandom_war_exploded/WEB-INF/classes/main/S_signup.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/fandom/main/S_signup.class" afterPath="$PROJECT_DIR$/out/production/fandom/main/S_signup.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/fandom_war_exploded/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/out/artifacts/fandom_war_exploded/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/fandom_war_exploded/css/style.css" afterPath="$PROJECT_DIR$/out/artifacts/fandom_war_exploded/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/fandom_war_exploded/signup.jsp" afterPath="$PROJECT_DIR$/out/artifacts/fandom_war_exploded/signup.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dbpack/C_dbcn.java" afterPath="$PROJECT_DIR$/src/dbpack/C_dbcn.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/style.css" afterPath="$PROJECT_DIR$/web/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/signup.jsp" afterPath="$PROJECT_DIR$/web/signup.jsp" />
     </list>
     <ignored path="fandom.iws" />
@@ -73,14 +66,34 @@
       <file leaf-file-name="signup.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/signup.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="547">
-              <caret line="177" column="80" selection-start-line="177" selection-start-column="80" selection-end-line="177" selection-end-column="80" />
+            <state relative-caret-position="576">
+              <caret line="30" column="72" selection-start-line="10" selection-start-column="26" selection-end-line="30" selection-end-column="72" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="S_signup.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ap-user.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/ap-user.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="571">
+              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ap-productcatlog.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/ap-productcatlog.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-256">
+              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="S_signup.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/S_signup.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1396">
@@ -107,8 +120,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="jsf" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -150,8 +164,11 @@
         <option value="$PROJECT_DIR$/web/js/my.js" />
         <option value="$PROJECT_DIR$/src/dbpack/C_dbcn.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/d1dcfbcc-924d-426f-8c83-ff82402302d1/console.sql" />
-        <option value="$PROJECT_DIR$/web/signup.jsp" />
         <option value="$PROJECT_DIR$/src/main/S_signup.java" />
+        <option value="$PROJECT_DIR$/web/signup.jsp" />
+        <option value="$PROJECT_DIR$/web/ap-user.xhtml" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/ap-user.jsp" />
+        <option value="$PROJECT_DIR$/web/ap-user.jsp" />
       </list>
     </option>
   </component>
@@ -231,6 +248,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="fandom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fandom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fandom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -809,12 +840,12 @@
       <workItem from="1462188188002" duration="22307000" />
       <workItem from="1462281282195" duration="40000" />
       <workItem from="1462334247995" duration="8273000" />
-      <workItem from="1462344371996" duration="5085000" />
+      <workItem from="1462344371996" duration="7290000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="142534000" />
+    <option name="totallyTimeSpent" value="144739000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -826,8 +857,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
-    <editor active="false" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
@@ -843,7 +874,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3317702" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1443133" sideWeight="0.47892272" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1443133" sideWeight="0.47892272" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15718885" sideWeight="0.5210773" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22585838" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -908,28 +939,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/allproducts.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1360">
-          <caret line="80" column="29" selection-start-line="80" selection-start-column="29" selection-end-line="80" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1054">
@@ -1049,13 +1058,6 @@
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/f77915af/35d68acb-4f53-4399-b531-94b929e3e8e9/fandow.product" />
-    <entry file="file://$PROJECT_DIR$/web/ap-productcatlog.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/adminpanel.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-640">
@@ -1152,6 +1154,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1210,14 +1213,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/signup.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="547">
-          <caret line="177" column="80" selection-start-line="177" selection-start-column="80" selection-end-line="177" selection-end-column="80" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/S_signup.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1396">
@@ -1225,6 +1220,46 @@
           <folding>
             <marker date="1462349751291" expanded="true" signature="1819:1994" placeholder="INSERT INTO cust_info... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/ap-user.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/ap-user.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/signup.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="30" column="72" selection-start-line="10" selection-start-column="26" selection-end-line="30" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/ap-user.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="571">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/ap-productcatlog.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-256">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
