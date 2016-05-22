@@ -51,7 +51,6 @@
                             </div>
                             <div class="file-path-wrapper">
                                 <input class="file-path validate" id="dp" type="text" name="dp">
-                                <label for="dp">Display Image</label>
                             </div>
                         </div>
                     </div>

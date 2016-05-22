@@ -96,13 +96,18 @@
 <br/>
 
 <div class="container">
-<% ResultSet rs = (ResultSet)request.getAttribute("rs");
-    while (rs.next()){ %>
+<%
+    ResultSet rs = (ResultSet)request.getAttribute("rs");
+    String prdctimg = "resourse/uploads/prdcts/";
+    String imgnm = null;
+    while (rs.next()){
+        try {imgnm = rs.getString("P_Img");} catch (SQLException e) {e.printStackTrace();}
+%>
 
 <div class="col-sm-4">
     <div class="card">
         <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="http://materializecss.com/images/sample-1.jpg">
+                <img class="activator" src="<% out.print(prdctimg+imgnm); %>">
         </div>
         <div class="card-content">
             <span class="card-title activator grey-text text-darken-4"><%
@@ -115,33 +120,23 @@
             <div class="card-action">
                 <a href="#"><button class="waves-effect waves-teal btn-flat"><i class="material-icons">info_outline</i></button></a>
                 <a href="#"><button class="waves-effect waves-teal btn-flat"><span class="glyphicon glyphicon-bookmark"></span></button></a>
-                <a href="#"><button class="waves-effect waves-teal btn-flat"><span class="glyphicon glyphicon-shopping-cart"><</button></a>
+                <a href="#"><button class="waves-effect waves-teal btn-flat"><span class="glyphicon glyphicon-shopping-cart"></span></button></a>
             </div>
         </div>
         <div class="card-reveal">
             <span class="card-title grey-text text-darken-4"><%
-                try {
-                    out.print(rs.getString("P_Name"));
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                }
+                try {  out.print(rs.getString("P_Name"));} catch (SQLException e) {e.printStackTrace();}
             %><i class="material-icons right">close</i></span>
             <p>
                 <%
-                    try{
-                        out.print(rs.getString("P_ID"));
-                    }catch (SQLException e){
-                        e.printStackTrace();
-                    }
+                    try{out.print(rs.getString("P_ID"));}catch (Exception e){e.printStackTrace();}
                 %>
             </p>
-            <p><%
-                try {
-                    out.print(rs.getString("P_Desc"));
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                }
-            %></p>
+            <p>
+                <%
+                    try {out.print(rs.getString("P_Desc"));} catch (SQLException e) {e.printStackTrace();}
+                %>
+            </p>
         </div>
     </div>
 </div>

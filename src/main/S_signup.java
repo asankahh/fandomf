@@ -1,24 +1,35 @@
 package main;
 
 import dbpack.C_dbcn;
+import org.apache.commons.fileupload.FileItem;
+import org.apache.commons.fileupload.FileItemFactory;
+import org.apache.commons.fileupload.disk.DiskFileItemFactory;
+import org.apache.commons.fileupload.servlet.ServletFileUpload;
+import org.apache.commons.io.FilenameUtils;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.Date;
+import java.util.Iterator;
+import java.util.List;
 
 /**
  * Created by asank on 5/4/2016.
  */
 @WebServlet(name = "S_signup")
 public class S_signup extends HttpServlet {
+    String saveusrimg = "F:\\GIT-Sourcetree\\fandom\\uploads\\usrimg";
+
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         PrintWriter out = response.getWriter();
         String dp = request.getParameter("dp");
@@ -40,6 +51,42 @@ public class S_signup extends HttpServlet {
         String tph = request.getParameter("tph");
         String tpm = request.getParameter("tpm");
         String msg;
+
+        //upload img starts
+        try{
+            boolean ismltprt = ServletFileUpload.isMultipartContent(request);
+            if(!ismltprt){
+                out.println("image field is empty");
+                return;
+            }else {
+                FileItemFactory fctry = new DiskFileItemFactory();
+                ServletFileUpload upld = new ServletFileUpload(fctry);
+                try {
+                    List<FileItem> items = upld.parseRequest(request);
+                    Iterator itr = items.iterator();
+                    while (itr.hasNext()) {
+                        FileItem itm = (FileItem) items.iterator();
+                        if (itm.isFormField()) {
+
+                        } else {
+                            String itemname = itm.getName();
+                            if ((itemname == null) || itemname.equals("")) {
+                                continue;
+                            }
+                            String filename = FilenameUtils.getName(itemname);
+                            File f = checkExist(filename);
+                            itm.write(f);
+                        }
+                    }
+                }catch (Exception ex){
+                    ex.printStackTrace();
+                }
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+        //upload img ends
 
         try {
             if(pw.equals(pwcnf)){
@@ -77,6 +124,17 @@ public class S_signup extends HttpServlet {
             e.printStackTrace();
         }
     }
+
+    private File checkExist(String filename) {
+        File f = new File(saveusrimg+"/"+filename);
+        if(f.exists()){
+            StringBuffer sb = new StringBuffer(filename);
+            sb.insert(sb.lastIndexOf("."),"-"+new Date().getTime());
+            f = new File(saveusrimg+"/"+sb.toString());
+        }
+        return f;
+    }
+
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
