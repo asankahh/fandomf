@@ -48,7 +48,7 @@
                     </div>
                     <div class="card-content">
                         <span class="card-title activator grey-text text-darken-4">Customers<i class="material-icons right">more_vert</i></span>
-                        <p><a href="#">Open Customers data</a></p>
+                        <p><a href="ap-user.jsp">Open Customers data</a></p>
                     </div>
                     <div class="card-reveal">
                         <span class="card-title grey-text text-darken-4">Special Offer 3<i class="material-icons right">close</i></span>

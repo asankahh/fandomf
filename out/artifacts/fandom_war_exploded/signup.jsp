@@ -37,7 +37,7 @@
     <div class="col-md-8">
         <div class="container">
 
-            <form method="post" action="S_signup" class="formblock">
+            <form method="post" action="S_signup" class="formblock" enctype="multipart/form-data">
 
                 <div class="row">
                     <div class="col s4" >
@@ -50,7 +50,8 @@
                                 <input type="file" accept="*image/*" onchange="loadFile(event)">
                             </div>
                             <div class="file-path-wrapper">
-                                <input class="file-path validate" type="text" name="dp">
+                                <input class="file-path validate" id="dp" type="text" name="dp">
+                                <label for="dp">Display Image</label>
                             </div>
                         </div>
                     </div>

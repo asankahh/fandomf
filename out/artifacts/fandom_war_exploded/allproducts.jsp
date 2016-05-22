@@ -1,4 +1,5 @@
 <%@ page import="java.sql.ResultSet" %>
+<%@ page import="java.sql.SQLException" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
@@ -27,7 +28,7 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <%--<script type="text/javascript" src="js/bootstrap.min.js"></script>--%>
     <script type="text/javascript" src="js/materialize.min.js"></script>
 
     <style>
@@ -93,72 +94,63 @@
 </div>
 
 <br/>
-<table border="0" id="prdct">
-    <tr>
-        <c:forEach var="columnName" items="${result.columnNames}">
-            <th><c:out value="${columnName}"/> </th>
-        </c:forEach>
-    </tr>
-    <c:forEach var="row" items="${result.rowsByIndex}">
-        <tr>
-            <c:forEach var="column" items="${row}">
-                <td><c:out value="${column}"/></td>
-            </c:forEach>
-        </tr>
-    </c:forEach>
-</table>
-<script>
-    var ptbl = document.getElementById('prdct').tBodies[0];
-    for(var r=0,n=ptbl.rows.length;r<n;r++){
-        for(var c=0,m=ptbl.rows[r].cells.length; c<m; c++){
-            if(ptbl.rows[r].cells[c].childNodes[0].value){
-                var nm0 = ptbl.rows[0].cells[1].innerHTML;
-                var dsc0= ptbl.rows[0].cells[2].innerHTML;
-                document.getElementById("nm0").innerHTML=nm0;
-                document.getElementById("nmin0").innerHTML=nm0;
-                document.getElementById("dsc0").innerHTML=dsc0
-            }
-        }
-    }
-</script>
-
-<br/>
 
 <div class="container">
+<% ResultSet rs = (ResultSet)request.getAttribute("rs");
+    while (rs.next()){ %>
 
-    <div class="row">
-        <% ResultSet rs = (ResultSet)request.getAttribute("rs");
-            while (rs.next()){ %>
-        <div class="col-sm-4">
-            <div class="card">
-                <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="http://materializecss.com/images/sample-1.jpg">
-                </div>
-                <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4" id="nm10"><i class="material-icons right">more_vert</i></span>
-                    <div class="card-action">
-                        <a href="productview.jsp">
-                            <button class="waves-effect waves-teal btn-flat"><i class="material-icons"><%= rs.getString(1) %></i></button>
-                        </a>
-                        <a href="#">
-                            <button class="waves-effect waves-teal btn-flat"><span class="glyphicon glyphicon-bookmark"><%= rs.getString(2) %></span></button>
-                        </a>
-                        <a href="#">
-                            <button class="waves-effect waves-teal btn-flat"><span class="glyphicon glyphicon-shopping-cart"><%= rs.getString(3) %></span></button>
-                        </a>
-                    </div>
-                </div>
-                <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4" id="nmin0"><i class="material-icons right">close</i></span>
-                    <p id="dsc0"></p>
-                </div>
+<div class="col-sm-4">
+    <div class="card">
+        <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="http://materializecss.com/images/sample-1.jpg">
+        </div>
+        <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4"><%
+                try {
+                    out.print(rs.getString("P_Name"));
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            %><i class="material-icons right">more_vert</i></span>
+            <div class="card-action">
+                <a href="#"><button class="waves-effect waves-teal btn-flat"><i class="material-icons">info_outline</i></button></a>
+                <a href="#"><button class="waves-effect waves-teal btn-flat"><span class="glyphicon glyphicon-bookmark"></span></button></a>
+                <a href="#"><button class="waves-effect waves-teal btn-flat"><span class="glyphicon glyphicon-shopping-cart"><</button></a>
             </div>
         </div>
+        <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4"><%
+                try {
+                    out.print(rs.getString("P_Name"));
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            %><i class="material-icons right">close</i></span>
+            <p>
+                <%
+                    try{
+                        out.print(rs.getString("P_ID"));
+                    }catch (SQLException e){
+                        e.printStackTrace();
+                    }
+                %>
+            </p>
+            <p><%
+                try {
+                    out.print(rs.getString("P_Desc"));
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            %></p>
+        </div>
     </div>
-    <% } %>
 </div>
-
-
+<%}
+    try {
+    } catch (Exception e) {
+    }
+%>
+</div>
 <script>
     $(document).ready(function () {
         $('select').material_select();

@@ -50,8 +50,8 @@ public class S_allproduct extends HttpServlet {
                 //DataSet
                 pstmnt= con.prepareStatement(qry1);
                 rs= pstmnt.executeQuery();
-                Result result = ResultSupport.toResult(rs);
-                request.setAttribute("result",result);
+//                Result result = ResultSupport.toResult(rs);
+//                request.setAttribute("result",result);
                 request.setAttribute("rs",rs);
 //                while (rs.next()){
 //                    Product pr = new Product();
