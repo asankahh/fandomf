@@ -1,3 +1,6 @@
+<%@ page import="java.sql.ResultSet" %>
+<%@ page import="java.sql.SQLException" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%--
   Created by IntelliJ IDEA.
   User: asank
@@ -95,28 +98,22 @@
                 <header class="w3-container w3-teal">
                     <h1>Newly Arrivals</h1>
                 </header>
+                <%
+                    String test = (String)request.getAttribute("test");
+                    out.print(test);
+//                    ResultSet rs = (ResultSet)request.getAttribute("rs1");
+//                    if(rs==null){
+//                        out.print("No data");
+//                    }
+                %>
                 <div class="row">
                     <div class="w3-container">
-                        <img id="img1" src="resourse/admin/MR%20(1).jpg" style="width: 250px;">
-                        <p>Lorem ipsum...</p>
+                        <img style="width: 100%" id="img1" src="">
+                        <p></p>
                         <button class="w3-btn">Button</button>
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="w3-container">
-                        <img src="resourse/admin/MR%20(1).jpg" style="width: 250px;">
-                        <p>Lorem ipsum...</p>
-                        <button class="w3-btn">Button</button>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="w3-container">
-                        <img src="resourse/admin/MR%20(1).jpg" style="width: 250px;">
-                        <p>Lorem ipsum...</p>
-                        <button class="w3-btn">Button</button>
-                    </div>
-                </div>
 
             </div>
 
@@ -158,10 +155,9 @@
                         </div>
                     </div>
                 </div>
-
             </div>
 
-            <div class="container-fluid" style="margin-top: 300px">
+            <div class="container-fluid" style="margin-top: 100px">
                 <div class="row">
                     <div class="col-sm-4">
                         <div class="card">
@@ -295,7 +291,7 @@
                 </header>
                 <div class="row">
                     <div class="w3-container">
-                        <img src="resourse/admin/MR%20(1).jpg" style="width: 250px;">
+                        <img src="resourse/admin/MR%20(1).jpg" style="width: 100%;">
                         <p>Lorem ipsum...</p>
                         <button class="w3-btn">Button</button>
                     </div>
@@ -303,14 +299,14 @@
 
                 <div class="row">
                     <div class="w3-container">
-                        <img src="resourse/admin/MR%20(1).jpg" style="width: 250px;">
+                        <img src="resourse/admin/MR%20(1).jpg" style="width: 100%;">
                         <p>Lorem ipsum...</p>
                         <button class="w3-btn">Button</button>
                     </div>
                 </div>
                 <div class="row">
                     <div class="w3-container">
-                        <img src="resourse/admin/MR%20(1).jpg" style="width: 250px;">
+                        <img src="resourse/admin/MR%20(1).jpg" style="width: 100%;">
                         <p>Lorem ipsum...</p>
                         <button class="w3-btn">Button</button>
                     </div>

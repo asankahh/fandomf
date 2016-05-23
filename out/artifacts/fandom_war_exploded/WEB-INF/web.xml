@@ -38,4 +38,14 @@
         <servlet-name>S_productView</servlet-name>
         <url-pattern>/S_productView</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>S_NewArr</servlet-name>
+        <servlet-class>main.S_NewArr</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>S_NewArr</servlet-name>
+        <url-pattern>/S_NewArr</url-pattern>
+    </servlet-mapping>
 </web-app>

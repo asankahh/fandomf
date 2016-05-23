@@ -1,3 +1,7 @@
+<%@ page import="java.sql.ResultSet" %>
+<%@ page import="java.sql.SQLException" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <%--
   Created by IntelliJ IDEA.
   User: asanka
@@ -5,7 +9,7 @@
   Time: 8:25 PM
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <html>
 <head>
     <title>$ItemName$</title>
@@ -26,6 +30,7 @@
     <script type="text/javascript" src="js/lightslider.js"></script>
 </head>
 <body>
+
 <nav class="navbar navbar-inverse">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -56,8 +61,18 @@
 <div class="container" id="productbox">
 
     <div class="col-md-10">
+        <%
+            ResultSet rsprdct = (ResultSet)request.getAttribute("prdct");
+            String tst = null;
+            String prdctimg = "resourse/uploads/prdcts/";
+            String imgnm = null;
+            while(rsprdct.next()){
+                try {imgnm = rsprdct.getString("P_Img");} catch (SQLException e) {e.printStackTrace();}
+
+
+        %>
         <div class="col-md-2" id="productshwcs" style="margin: 10px;">
-            <img class="materialboxed" width="100" src="resourse/prdctthumbnail/MB%20(1).jpg">
+            <img class="materialboxed" width="100" src="<% out.print(prdctimg+imgnm); %>">
             <img class="materialboxed" width="100" src="resourse/prdctthumbnail/MB%20(2).jpg">
             <img class="materialboxed" width="100" src="resourse/prdctthumbnail/MB%20(3).jpg">
             <img class="materialboxed" width="100" src="resourse/prdctthumbnail/MB%20(3).jpg">
@@ -65,10 +80,12 @@
         </div>
         <div id="productdetail">
             <form method="post" action="#">
+
+
             <ul class="collection with-header">
-                <li class="collection-header teal lighten-5"><h3 id="name">[Product Name]</h3></li>
-                <li class="collection-item teal lighten-5"><p id="desc">[product description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin porta.]</p></li>
-                <li class="collection-item teal lighten-5"><h4>Price: </h4><p id="price">$89.09</p><input style="width: 100px" type="text" id="qntt" placeholder="Quantity"></li>
+                <li class="collection-header teal lighten-5"><h3 id="name"><%try{out.print(rsprdct.getString("P_Name"));} catch (SQLException e){e.printStackTrace();}%></h3></li>
+                <li class="collection-item teal lighten-5"><p id="desc"><%try{out.print(rsprdct.getString("P_Desc"));} catch (SQLException e){e.printStackTrace();}%></p></li>
+                <li class="collection-item teal lighten-5"><h4>Price: </h4><p id="price"><%try{out.print(rsprdct.getString("P_Price"));} catch (SQLException e){e.printStackTrace();}%></p><input style="width: 100px" type="text" id="qntt" placeholder="Quantity"></li>
                 <li class="collection-item teal lighten-5"><h4>Shipping methods : </h4><p id="shipping">Standard</p></li>
                 <li class="collection-item teal lighten-5">
                     <button id="now" class="btn waves-effect waves-light">BuyNow</button>
@@ -77,8 +94,12 @@
 
                 </li>
             </ul>
+
             </form>
         </div>
+        <%
+            }
+        %>
     </div>
 
 

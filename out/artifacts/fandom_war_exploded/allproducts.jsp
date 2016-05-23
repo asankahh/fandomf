@@ -94,58 +94,69 @@
 </div>
 
 <br/>
+<%--<form name="form" method="get" action="S_productView">--%>
+    <%--<input type="hidden" name="hd"/>--%>
+    <%--<input type="button" name="bt" value="gi" onclick="{document.form.hd.value=this.value;document.form.submit();}"/>--%>
+<%--</form>--%>
 
 <div class="container">
-<%
-    ResultSet rs = (ResultSet)request.getAttribute("rs");
-    String prdctimg = "resourse/uploads/prdcts/";
-    String imgnm = null;
-    while (rs.next()){
-        try {imgnm = rs.getString("P_Img");} catch (SQLException e) {e.printStackTrace();}
-%>
+    <form name="form" method="get" action="">
 
-<div class="col-sm-4">
-    <div class="card">
-        <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="<% out.print(prdctimg+imgnm); %>">
-        </div>
-        <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4"><%
-                try {
-                    out.print(rs.getString("P_Name"));
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                }
-            %><i class="material-icons right">more_vert</i></span>
-            <div class="card-action">
-                <a href="#"><button class="waves-effect waves-teal btn-flat"><i class="material-icons">info_outline</i></button></a>
-                <a href="#"><button class="waves-effect waves-teal btn-flat"><span class="glyphicon glyphicon-bookmark"></span></button></a>
-                <a href="#"><button class="waves-effect waves-teal btn-flat"><span class="glyphicon glyphicon-shopping-cart"></span></button></a>
+    <%
+        ResultSet rs = (ResultSet)request.getAttribute("rs");
+        String prdctimg = "resourse/uploads/prdcts/";
+        String imgnm = null;
+        while (rs.next()){
+            try {imgnm = rs.getString("P_Img");} catch (SQLException e) {e.printStackTrace();}
+    %>
+
+    <div class="col-sm-4">
+        <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="<% out.print(prdctimg+imgnm); %>">
+            </div>
+            <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">
+                    <%
+                        try {  out.print(rs.getString("P_Name"));} catch (SQLException e) {e.printStackTrace();}
+                    %>
+                    <i class="material-icons right">close</i></span>
+                <input type="text" name="n" id="nm" disabled
+                       value="" title="">
+                <p>
+                    <%
+                        try {out.print(rs.getString("P_Desc"));} catch (SQLException ex) {ex.printStackTrace();}
+                    %>
+                </p>
+            </div>
+            <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4"><%
+                    try {
+                        out.print(rs.getString("P_Name"));
+                    } catch (SQLException e) {
+                        e.printStackTrace();
+                    }
+                %><i class="material-icons right">more_vert</i></span>
+                <div class="card-action">
+                    <div class="row">
+                        <input type="hidden" name="hd" value="gttt">
+                        <a href="${pageContext.request.contextPath}/S_productView?bt=<%try{out.print(rs.getString("P_ID"));}catch (SQLException SQLEX){SQLEX.printStackTrace();}%>"><i class="material-icons">info_outline</i></a>
+                        <a href="#"><input hidden type="button"/><i class="material-icons">favorite_outline</i></a>
+                        <a href="#"><input hidden type="button"><i class="material-icons">shopping_cart_plus</i></a>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4"><%
-                try {  out.print(rs.getString("P_Name"));} catch (SQLException e) {e.printStackTrace();}
-            %><i class="material-icons right">close</i></span>
-            <p>
-                <%
-                    try{out.print(rs.getString("P_ID"));}catch (Exception e){e.printStackTrace();}
-                %>
-            </p>
-            <p>
-                <%
-                    try {out.print(rs.getString("P_Desc"));} catch (SQLException e) {e.printStackTrace();}
-                %>
-            </p>
-        </div>
     </div>
-</div>
+<%--</form>--%>
 <%}
     try {
     } catch (Exception e) {
     }
 %>
+    </form>
 </div>
+
 <script>
     $(document).ready(function () {
         $('select').material_select();
