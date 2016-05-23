@@ -37,7 +37,7 @@ public class S_productView extends HttpServlet {
         con = C_dbcn.dbcn();
         PrintWriter out = response.getWriter();
         String prdctid = request.getParameter("bt");
-        String qry1 = "SELECT P_ID,P_Name,P_Desc,P_Img,P_Price FROM product WHERE P_ID='"+prdctid+"' ";
+        String qry1 = "SELECT P_ID,P_Name,P_Desc,P_Img,P_Img1,P_Img2,p_Img3,P_Img4,P_Price FROM product WHERE P_ID='"+prdctid+"' ";
 
         try{
             assert con != null;

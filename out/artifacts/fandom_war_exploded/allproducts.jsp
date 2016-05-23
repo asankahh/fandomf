@@ -94,10 +94,7 @@
 </div>
 
 <br/>
-<%--<form name="form" method="get" action="S_productView">--%>
-    <%--<input type="hidden" name="hd"/>--%>
-    <%--<input type="button" name="bt" value="gi" onclick="{document.form.hd.value=this.value;document.form.submit();}"/>--%>
-<%--</form>--%>
+
 
 <div class="container">
     <form name="form" method="get" action="">

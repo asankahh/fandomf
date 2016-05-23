@@ -219,52 +219,72 @@
         <mandatory>1</mandatory>
         <data-type>date</data-type>
       </column>
-      <key id="66" parent="8" name="PRIMARY">
+      <column id="66" parent="8" name="P_Img1">
+        <mandatory>1</mandatory>
+        <data-type>varchar(1000)</data-type>
+      </column>
+      <column id="67" parent="8" name="P_Img2">
+        <mandatory>1</mandatory>
+        <data-type>varchar(1000)</data-type>
+      </column>
+      <column id="68" parent="8" name="p_Img3">
+        <mandatory>1</mandatory>
+        <data-type>varchar(1000)</data-type>
+      </column>
+      <column id="69" parent="8" name="P_Img4">
+        <mandatory>1</mandatory>
+        <data-type>varchar(1000)</data-type>
+      </column>
+      <column id="70" parent="8" name="P_Img5">
+        <mandatory>1</mandatory>
+        <data-type>varchar(1000)</data-type>
+      </column>
+      <key id="71" parent="8" name="PRIMARY">
         <columns>P_ID</columns>
         <primary>1</primary>
       </key>
-      <column id="67" parent="9" name="Review_ID">
+      <column id="72" parent="9" name="Review_ID">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
         <sequence-identity>1</sequence-identity>
       </column>
-      <column id="68" parent="9" name="Review_date">
+      <column id="73" parent="9" name="Review_date">
         <mandatory>1</mandatory>
         <data-type>date</data-type>
       </column>
-      <column id="69" parent="9" name="Review">
+      <column id="74" parent="9" name="Review">
         <data-type>mediumtext</data-type>
       </column>
-      <column id="70" parent="9" name="Rating">
+      <column id="75" parent="9" name="Rating">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <key id="71" parent="9" name="PRIMARY">
+      <key id="76" parent="9" name="PRIMARY">
         <columns>Review_ID</columns>
         <primary>1</primary>
       </key>
-      <column id="72" parent="10" name="WList_ID">
+      <column id="77" parent="10" name="WList_ID">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
         <sequence-identity>1</sequence-identity>
       </column>
-      <column id="73" parent="10" name="W_Product_Name">
+      <column id="78" parent="10" name="W_Product_Name">
         <mandatory>1</mandatory>
         <data-type>varchar(50)</data-type>
       </column>
-      <column id="74" parent="10" name="W_Product_Price">
+      <column id="79" parent="10" name="W_Product_Price">
         <mandatory>1</mandatory>
         <data-type>varchar(10)</data-type>
       </column>
-      <column id="75" parent="10" name="W_Product_Quantity">
+      <column id="80" parent="10" name="W_Product_Quantity">
         <mandatory>1</mandatory>
         <data-type>varchar(10)</data-type>
       </column>
-      <column id="76" parent="10" name="Wish_Date">
+      <column id="81" parent="10" name="Wish_Date">
         <mandatory>1</mandatory>
         <data-type>varchar(45)</data-type>
       </column>
-      <key id="77" parent="10" name="PRIMARY">
+      <key id="82" parent="10" name="PRIMARY">
         <columns>WList_ID</columns>
         <primary>1</primary>
       </key>
