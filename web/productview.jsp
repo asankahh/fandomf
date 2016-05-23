@@ -31,32 +31,7 @@
 </head>
 <body>
 
-<nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Fandom Corner</a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav">
-                <li><a href="index.jsp">Deals</a></li>
-                <li class="active"><a href="allproducts.jsp">Browse All</a></li>
-                <li><a href="#">Movies</a></li>
-                <li><a href="#">Games</a></li>
-                <li><a href="#">Accesories</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><span class="glyphicon glyphicon-user"></span> [User's Name]</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-earphone"></span> Contact Us</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
+
 
 <div class="container" id="productbox">
 
@@ -66,17 +41,26 @@
             String tst = null;
             String prdctimg = "resourse/uploads/prdcts/";
             String imgnm = null;
+            String imgnm1 = null;
+            String imgnm2 = null;
+            String imgnm3 = null;
+            String imgnm4 = null;
+
             while(rsprdct.next()){
                 try {imgnm = rsprdct.getString("P_Img");} catch (SQLException e) {e.printStackTrace();}
+                try {imgnm1 = rsprdct.getString("P_Img1");} catch (SQLException e) {e.printStackTrace();}
+                try {imgnm2 = rsprdct.getString("P_Img2");} catch (SQLException e) {e.printStackTrace();}
+                try {imgnm3 = rsprdct.getString("p_Img3");} catch (SQLException e) {e.printStackTrace();}
+                try {imgnm4 = rsprdct.getString("P_Img4");} catch (SQLException e) {e.printStackTrace();}
 
 
         %>
         <div class="col-md-2" id="productshwcs" style="margin: 10px;">
             <img class="materialboxed" width="100" src="<% out.print(prdctimg+imgnm); %>">
-            <img class="materialboxed" width="100" src="resourse/prdctthumbnail/MB%20(2).jpg">
-            <img class="materialboxed" width="100" src="resourse/prdctthumbnail/MB%20(3).jpg">
-            <img class="materialboxed" width="100" src="resourse/prdctthumbnail/MB%20(3).jpg">
-            <img class="materialboxed" width="100" src="resourse/prdctthumbnail/MB%20(3).jpg">
+            <img class="materialboxed" width="100" src="<% out.print(prdctimg+imgnm1); %>">
+            <img class="materialboxed" width="100" src="<% out.print(prdctimg+imgnm2); %>">
+            <img class="materialboxed" width="100" src="<% out.print(prdctimg+imgnm3); %>">
+            <img class="materialboxed" width="100" src="<% out.print(prdctimg+imgnm4); %>">
         </div>
         <div id="productdetail">
             <form method="post" action="#">

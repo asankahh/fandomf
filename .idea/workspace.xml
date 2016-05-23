@@ -90,10 +90,21 @@
       <file leaf-file-name="S_productView.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/S_productView.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="68">
               <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
               <folding>
                 <marker date="1464007162416" expanded="true" signature="1141:1218" ph="SELECT P_ID,... product" />
+=======
+            <state relative-caret-position="172">
+              <caret line="39" column="23" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="129" />
+              <folding>
+                <marker date="1464007192088" expanded="true" signature="1141:1221" ph="SELECT P_ID,... product" />
+                <marker date="1464007192088" expanded="true" signature="1141:1233" ph="SELECT P_ID,... product" />
+                <marker date="1464007192088" expanded="true" signature="1141:1234" ph="SELECT P_ID,... product" />
+                <marker date="1464007192088" expanded="true" signature="1141:1246" ph="SELECT P_ID,... product" />
+                <marker date="1464007192088" expanded="true" signature="1141:1249" ph="SELECT P_ID,... product" />
+>>>>>>> f4a3348dcc04ecd5a1d1ccb8bfafb9db7ea16aa1
               </folding>
             </state>
           </provider>
@@ -102,6 +113,7 @@
       <file leaf-file-name="productview.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/productview.jsp">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="83">
               <caret line="67" column="32" selection-start-line="67" selection-start-column="32" selection-end-line="67" selection-end-column="32" />
               <folding />
@@ -136,6 +148,10 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="495">
               <caret line="117" column="36" selection-start-line="117" selection-start-column="36" selection-end-line="117" selection-end-column="36" />
+=======
+            <state relative-caret-position="-168">
+              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+>>>>>>> f4a3348dcc04ecd5a1d1ccb8bfafb9db7ea16aa1
               <folding>
                 <marker date="1464007162420" expanded="true" signature="3631:3806" ph="INSERT INTO cust_info... " />
               </folding>
@@ -201,17 +217,25 @@
         <option value="$PROJECT_DIR$/web/ap-addproduct.jsp" />
         <option value="$PROJECT_DIR$/web/signup.jsp" />
         <option value="$PROJECT_DIR$/src/main/S_signup.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/d1dcfbcc-924d-426f-8c83-ff82402302d1/console.sql" />
         <option value="$PROJECT_DIR$/src/util/S_NewArr.java" />
         <option value="$PROJECT_DIR$/src/main/S_allproduct.java" />
         <option value="$PROJECT_DIR$/src/main/S_NewArr.java" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
+<<<<<<< HEAD
+=======
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/web/allproducts.jsp" />
+>>>>>>> f4a3348dcc04ecd5a1d1ccb8bfafb9db7ea16aa1
         <option value="$PROJECT_DIR$/src/main/S_productView.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/d1dcfbcc-924d-426f-8c83-ff82402302d1/console.sql" />
         <option value="$PROJECT_DIR$/web/productview.jsp" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/web/allproducts.jsp" />
         <option value="$PROJECT_DIR$/src/main/S_cart.java" />
         <option value="$PROJECT_DIR$/web/cart.jsp" />
+=======
+>>>>>>> f4a3348dcc04ecd5a1d1ccb8bfafb9db7ea16aa1
       </list>
     </option>
   </component>
@@ -964,13 +988,21 @@
       <workItem from="1463859677749" duration="2688000" />
       <workItem from="1463910787634" duration="31470000" />
       <workItem from="1463988638012" duration="10314000" />
+<<<<<<< HEAD
       <workItem from="1464001340674" duration="3407000" />
       <workItem from="1464007339222" duration="6949000" />
+=======
+      <workItem from="1464001340674" duration="5440000" />
+>>>>>>> f4a3348dcc04ecd5a1d1ccb8bfafb9db7ea16aa1
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="201583000" />
+=======
+    <option name="totallyTimeSpent" value="196667000" />
+>>>>>>> f4a3348dcc04ecd5a1d1ccb8bfafb9db7ea16aa1
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -997,6 +1029,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.513302" sideWeight="0.49785408" order="8" side_tool="false" content_ui="tabs" x="-8" y="-8" width="1936" height="1056" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3274596" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3317702" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16412213" sideWeight="0.4600939" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16412213" sideWeight="0.5399061" order="2" side_tool="true" content_ui="tabs" />
@@ -1013,9 +1046,40 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3317702" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5169988" sideWeight="0.50214595" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32452276" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22585838" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.49589685" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8253224" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.51465416" sideWeight="0.49785408" order="8" side_tool="false" content_ui="tabs" x="-8" y="-8" width="1936" height="1056" />
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3274596" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3317702" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28218883" sideWeight="0.4654162" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13519314" sideWeight="0.5345838" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -1216,13 +1280,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/uploads/prdcts/acd.png" />
     <entry file="file://$PROJECT_DIR$/web/resourse/uploads/prdcts/acd.png" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d1dcfbcc-924d-426f-8c83-ff82402302d1/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/S_NewArr.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="888">
@@ -1256,6 +1313,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/S_productView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1266,6 +1324,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> f4a3348dcc04ecd5a1d1ccb8bfafb9db7ea16aa1
     <entry file="file://$PROJECT_DIR$/web/allproducts.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1319,10 +1379,39 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/S_signup.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
           <caret line="117" column="36" selection-start-line="117" selection-start-column="36" selection-end-line="117" selection-end-column="36" />
+=======
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d1dcfbcc-924d-426f-8c83-ff82402302d1/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="97" selection-start-line="0" selection-start-column="97" selection-end-line="0" selection-end-column="97" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/S_productView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="39" column="23" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="129" />
+          <folding>
+            <marker date="1464007192088" expanded="true" signature="1141:1221" ph="SELECT P_ID,... product" />
+            <marker date="1464007192088" expanded="true" signature="1141:1233" ph="SELECT P_ID,... product" />
+            <marker date="1464007192088" expanded="true" signature="1141:1234" ph="SELECT P_ID,... product" />
+            <marker date="1464007192088" expanded="true" signature="1141:1246" ph="SELECT P_ID,... product" />
+            <marker date="1464007192088" expanded="true" signature="1141:1249" ph="SELECT P_ID,... product" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/productview.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-168">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+>>>>>>> f4a3348dcc04ecd5a1d1ccb8bfafb9db7ea16aa1
           <folding>
             <marker date="1464007162420" expanded="true" signature="3631:3806" ph="INSERT INTO cust_info... " />
           </folding>
