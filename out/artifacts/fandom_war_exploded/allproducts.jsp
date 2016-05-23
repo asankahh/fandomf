@@ -94,10 +94,7 @@
 </div>
 
 <br/>
-<%--<form name="form" method="get" action="S_productView">--%>
-    <%--<input type="hidden" name="hd"/>--%>
-    <%--<input type="button" name="bt" value="gi" onclick="{document.form.hd.value=this.value;document.form.submit();}"/>--%>
-<%--</form>--%>
+
 
 <div class="container">
     <form name="form" method="get" action="">
@@ -142,7 +139,7 @@
                         <input type="hidden" name="hd" value="gttt">
                         <a href="${pageContext.request.contextPath}/S_productView?bt=<%try{out.print(rs.getString("P_ID"));}catch (SQLException SQLEX){SQLEX.printStackTrace();}%>"><i class="material-icons">info_outline</i></a>
                         <a href="#"><input hidden type="button"/><i class="material-icons">favorite_outline</i></a>
-                        <a href="#"><input hidden type="button"><i class="material-icons">shopping_cart_plus</i></a>
+                        <a href="${pageContext.request.contextPath}/S_cart?bt1=<%try{out.println(rs.getString("P_ID"));}catch(SQLException SQLEX){SQLEX.printStackTrace();}%>"><i class="material-icons">shopping_cart_plus</i></a>
                     </div>
                 </div>
             </div>

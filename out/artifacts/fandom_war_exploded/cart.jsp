@@ -1,4 +1,5 @@
-<%--
+<%@ page import="java.sql.ResultSet" %>
+<%@ page import="java.sql.SQLException" %><%--
   Created by IntelliJ IDEA.
   User: asank
   Date: 4/29/2016
@@ -27,18 +28,24 @@
 
 <div class="container-fluid owncontainer">
     <div class="col-md-1"></div>
+    <%
+        ResultSet rscart=(ResultSet)request.getAttribute("crt");
+        String prdctimg = "resourse/uploads/prdcts/";
+        String imgnm = null;
+       while(rscart.next()){
+           try {imgnm = rscart.getString("P_Img");} catch (SQLException e) {e.printStackTrace();}
+
+    %>
 
     <div class="col-md-7">
         <h1>Your Cart</h1>
         <div class="w3-card-4 w3-margin">
             <header class="w3-container w3-teal">
-                <h3>[Product Name]</h3>
+                <h3><%try{out.println(rscart.getString("P_Name"));}catch (SQLException e){e.printStackTrace();}%></h3>
             </header>
             <div class="w3-container" style="height: 200px">
                 <img src="resourse/FCLogo.png" width="100px" style="float:left; margin-top: 5px">
-                <p style="float:right; text-align: justify; margin-left: 110px">[Product desc:Lorem ipsum dolor sit
-                    amet, consectetur adipiscing elit. Cras in nulla eros! Nullam hendrerit dignissim nunc, quis iaculis
-                    magna eleifend vel? Integer nisi sem, malesuada non dolor id, imperdiet eleifend.]</p>
+                <p style="float:right; text-align: justify; margin-left: 110px"><%try{out.println(rscart.getString("P_Desc"));}catch (SQLException e){e.printStackTrace();}%></p>
             </div>
             <footer class="w3-container w3-teal">
                 <h5 style="float: right"><a href="#">More....</a></h5>
@@ -57,7 +64,7 @@
 
 
     </div>
-
+<%}%>
 </div>
 
 

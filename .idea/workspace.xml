@@ -1,7 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f344959a-d1ce-4440-b295-16ce4f88d7bb" name="Default" comment="" />
+    <list default="true" id="f344959a-d1ce-4440-b295-16ce4f88d7bb" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/fandom_war_exploded/WEB-INF/classes/main/S_cart.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/fandom/main/S_cart.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/S_cart.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/fandom_war_exploded/WEB-INF/classes/Logging/S_Logging.class" afterPath="$PROJECT_DIR$/out/artifacts/fandom_war_exploded/WEB-INF/classes/Logging/S_Logging.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/fandom_war_exploded/WEB-INF/classes/main/S_NewArr.class" afterPath="$PROJECT_DIR$/out/artifacts/fandom_war_exploded/WEB-INF/classes/main/S_NewArr.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/fandom_war_exploded/WEB-INF/classes/main/S_allproduct.class" afterPath="$PROJECT_DIR$/out/artifacts/fandom_war_exploded/WEB-INF/classes/main/S_allproduct.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/fandom_war_exploded/WEB-INF/classes/main/S_productView.class" afterPath="$PROJECT_DIR$/out/artifacts/fandom_war_exploded/WEB-INF/classes/main/S_productView.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/fandom_war_exploded/WEB-INF/classes/main/S_signup.class" afterPath="$PROJECT_DIR$/out/artifacts/fandom_war_exploded/WEB-INF/classes/main/S_signup.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/fandom/Logging/S_Logging.class" afterPath="$PROJECT_DIR$/out/production/fandom/Logging/S_Logging.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/fandom/main/S_NewArr.class" afterPath="$PROJECT_DIR$/out/production/fandom/main/S_NewArr.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/fandom/main/S_allproduct.class" afterPath="$PROJECT_DIR$/out/production/fandom/main/S_allproduct.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/fandom/main/S_productView.class" afterPath="$PROJECT_DIR$/out/production/fandom/main/S_productView.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/fandom/main/S_signup.class" afterPath="$PROJECT_DIR$/out/production/fandom/main/S_signup.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/fandom_war_exploded/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/out/artifacts/fandom_war_exploded/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/fandom_war_exploded/allproducts.jsp" afterPath="$PROJECT_DIR$/out/artifacts/fandom_war_exploded/allproducts.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/fandom_war_exploded/cart.jsp" afterPath="$PROJECT_DIR$/out/artifacts/fandom_war_exploded/cart.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/allproducts.jsp" afterPath="$PROJECT_DIR$/web/allproducts.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/cart.jsp" afterPath="$PROJECT_DIR$/web/cart.jsp" />
+    </list>
     <ignored path="fandom.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -36,11 +57,31 @@
       <file leaf-file-name="S_allproduct.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/S_allproduct.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="53" column="17" selection-start-line="50" selection-start-column="16" selection-end-line="53" selection-end-column="17" />
+            <state relative-caret-position="680">
+              <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
               <folding>
                 <element signature="method#doPost#0;class#S_allproduct#0" expanded="false" />
-                <marker date="1463951579039" expanded="true" signature="1186:1230" ph="SELECT P_ID,... product" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="allproducts.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/allproducts.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="105" column="26" selection-start-line="105" selection-start-column="26" selection-end-line="105" selection-end-column="26" />
+              <folding>
+                <element signature="e#214#362#0#JSP" expanded="false" />
+                <marker date="1464009432518" expanded="true" signature="369:6313" ph="..." />
+                <marker date="1464009432518" expanded="true" signature="1438:6305" ph="..." />
+                <marker date="1464009432518" expanded="true" signature="3691:6192" ph="..." />
+                <marker date="1464009432518" expanded="true" signature="3737:6185" ph="..." />
+                <marker date="1464009432518" expanded="true" signature="4047:6106" ph="..." />
+                <marker date="1464009432518" expanded="true" signature="4074:6095" ph="..." />
+                <marker date="1464009432518" expanded="true" signature="4943:6080" ph="..." />
+                <marker date="1464009432518" expanded="true" signature="5333:6061" ph="..." />
+                <marker date="1464009432518" expanded="true" signature="5371:6038" ph="..." />
               </folding>
             </state>
           </provider>
@@ -49,27 +90,65 @@
       <file leaf-file-name="S_productView.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/S_productView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="39" column="74" selection-start-line="39" selection-start-column="74" selection-end-line="39" selection-end-column="74" />
+            <state relative-caret-position="68">
+              <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
               <folding>
-                <marker date="1464003703070" expanded="true" signature="1141:1193" ph="SELECT P_ID,... product" />
-                <marker date="1464003703070" expanded="true" signature="1141:1205" ph="SELECT P_ID,... product" />
-                <marker date="1464003703070" expanded="true" signature="1141:1206" ph="SELECT P_ID,... product" />
-                <marker date="1464003703070" expanded="true" signature="1141:1218" ph="SELECT P_ID,... product" />
-                <marker date="1464003703070" expanded="true" signature="1141:1221" ph="SELECT P_ID,... product" />
+                <marker date="1464007162416" expanded="true" signature="1141:1218" ph="SELECT P_ID,... product" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="productview.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="productview.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/productview.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+            <state relative-caret-position="83">
+              <caret line="67" column="32" selection-start-line="67" selection-start-column="32" selection-end-line="67" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cart.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/cart.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="364">
+              <caret line="47" column="170" selection-start-line="47" selection-start-column="170" selection-end-line="47" selection-end-column="170" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="S_cart.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/S_cart.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
               <folding>
-                <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
+                <marker date="1464010332418" expanded="true" signature="1078:1148" ph="SELECT P_ID,... product" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="S_signup.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/S_signup.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="117" column="36" selection-start-line="117" selection-start-column="36" selection-end-line="117" selection-end-column="36" />
+              <folding>
+                <marker date="1464007162420" expanded="true" signature="3631:3806" ph="INSERT INTO cust_info... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="signup.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/signup.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="334">
+              <caret line="177" column="20" selection-start-line="177" selection-start-column="20" selection-end-line="177" selection-end-column="20" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -100,7 +179,6 @@
         <option value="$PROJECT_DIR$/web/js/materialize.js" />
         <option value="$PROJECT_DIR$/web/pages/allproducts.jsp" />
         <option value="$PROJECT_DIR$/web/adminpnale.jsp" />
-        <option value="$PROJECT_DIR$/web/cart.jsp" />
         <option value="$PROJECT_DIR$/web/adminpanel-productcatlog.jsp" />
         <option value="$PROJECT_DIR$/web/ap-productcatlog.jsp" />
         <option value="$PROJECT_DIR$/src/Logging/dbcls.java" />
@@ -128,10 +206,12 @@
         <option value="$PROJECT_DIR$/src/main/S_allproduct.java" />
         <option value="$PROJECT_DIR$/src/main/S_NewArr.java" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/S_productView.java" />
         <option value="$PROJECT_DIR$/web/productview.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/web/allproducts.jsp" />
+        <option value="$PROJECT_DIR$/src/main/S_cart.java" />
+        <option value="$PROJECT_DIR$/web/cart.jsp" />
       </list>
     </option>
   </component>
@@ -151,8 +231,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-9" />
     <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1048" />
+    <option name="width" value="1370" />
+    <option name="height" value="772" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -195,18 +275,81 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
-        <subPane />
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Fandom1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Fandom1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Fandom1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Fandom1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Fandom1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Fandom1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Fandom1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Fandom1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Fandom1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
       </pane>
       <pane id="Scratches" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/lib/commons-io-2.3.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="IntelliLang.Advanced" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="js.eslint.eslintPackage" value="" />
@@ -565,6 +708,34 @@
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="fandom" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -651,6 +822,19 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
     <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
       <method />
     </configuration>
@@ -658,6 +842,7 @@
       <method />
     </configuration>
     <configuration default="false" name="Tomcat 8.0.33" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.33" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8808/" />
       <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
       <deployment>
         <artifact name="fandom:war exploded">
@@ -668,7 +853,7 @@
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="Tomcat_8_0_33_fandom" />
-        <option name="JNDI_PORT" value="1098" />
+        <option name="HTTP_PORT" value="8808" />
       </server-settings>
       <predefined_log_file id="Tomcat" enabled="true" />
       <predefined_log_file id="Tomcat Catalina" enabled="true" />
@@ -780,11 +965,12 @@
       <workItem from="1463910787634" duration="31470000" />
       <workItem from="1463988638012" duration="10314000" />
       <workItem from="1464001340674" duration="3407000" />
+      <workItem from="1464007339222" duration="6949000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="194634000" />
+    <option name="totallyTimeSpent" value="201583000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -796,7 +982,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <frame x="-9" y="-9" width="1370" height="772" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -808,13 +994,13 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5169988" sideWeight="0.50214595" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32452276" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.51465416" sideWeight="0.49785408" order="8" side_tool="false" content_ui="tabs" x="-8" y="-8" width="1936" height="1056" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.513302" sideWeight="0.49785408" order="8" side_tool="false" content_ui="tabs" x="-8" y="-8" width="1936" height="1056" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3274596" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28218883" sideWeight="0.4654162" order="4" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13519314" sideWeight="0.5345838" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22585838" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16412213" sideWeight="0.4600939" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16412213" sideWeight="0.5399061" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18015267" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.49589685" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -851,12 +1037,6 @@
           <properties />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/S_signup.java</url>
-          <line>90</line>
-          <properties />
-          <option name="timeStamp" value="58" />
-        </line-breakpoint>
       </breakpoints>
       <option name="time" value="99" />
     </breakpoint-manager>
@@ -867,13 +1047,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/signup.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2975">
-          <caret line="175" column="121" selection-start-line="175" selection-start-column="121" selection-end-line="175" selection-end-column="121" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/fonts/fontawesome-webfont.svg">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -903,21 +1076,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/49bcaca4-f93f-419d-822e-ad517da2b969/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/49bcaca4-f93f-419d-822e-ad517da2b969/console.sql" />
     <entry file="file://$PROJECT_DIR$/web/adminpnale.jsp" />
-    <entry file="file://$PROJECT_DIR$/web/cart.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1240">
-          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/js/lightslider.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
@@ -928,13 +1088,7 @@
     <entry file="dbDummy://dbtable:/f77915af/35d68acb-4f53-4399-b531-94b929e3e8e9/fandow.product" />
     <entry file="file://$PROJECT_DIR$/src/Logging/dbcls.java" />
     <entry file="file://$PROJECT_DIR$/src/dbpack/dbcn.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_60/jre/lib/rt.jar!/java/sql/DriverManager.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_60/jre/lib/rt.jar!/java/sql/DriverManager.class" />
     <entry file="file://$PROJECT_DIR$/src/main/S_DB.java" />
     <entry file="file://$PROJECT_DIR$/src/main/C_allproduct.java" />
     <entry file="jar://C:/Program Files/Apache Software Foundation/Tomcat 8.0/lib/servlet-api.jar!/javax/servlet/http/HttpServlet.class">
@@ -1029,9 +1183,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
           <caret line="63" column="53" selection-start-line="63" selection-start-column="50" selection-end-line="63" selection-end-column="53" />
-          <folding>
-            <marker date="1462137064000" expanded="true" signature="1206:1232" ph="SELECT * FRO... logindetails" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1053,13 +1205,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/signup.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="52" column="96" selection-start-line="52" selection-start-column="96" selection-end-line="52" selection-end-column="96" />
         </state>
       </provider>
     </entry>
@@ -1085,85 +1230,101 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="556">
-          <caret line="44" column="26" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/f77915af/d1dcfbcc-924d-426f-8c83-ff82402302d1/fandom.product">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="dbDummy://dbtable:/f77915af/d1dcfbcc-924d-426f-8c83-ff82402302d1/fandom.product" />
     <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2256">
           <caret line="94" column="30" selection-start-line="94" selection-start-column="30" selection-end-line="94" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="55" column="14" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/S_signup.java">
+    <entry file="file://$PROJECT_DIR$/src/main/S_allproduct.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="97" column="16" selection-start-line="97" selection-start-column="16" selection-end-line="97" selection-end-column="36" />
+        <state relative-caret-position="680">
+          <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
           <folding>
-            <marker date="1463930449461" expanded="true" signature="3631:3806" ph="INSERT INTO cust_info... " />
+            <element signature="method#doPost#0;class#S_allproduct#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/S_productView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="39" column="74" selection-start-line="39" selection-start-column="74" selection-end-line="39" selection-end-column="74" />
+        <state relative-caret-position="68">
+          <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
           <folding>
-            <marker date="1464003703070" expanded="true" signature="1141:1193" ph="SELECT P_ID,... product" />
-            <marker date="1464003703070" expanded="true" signature="1141:1205" ph="SELECT P_ID,... product" />
-            <marker date="1464003703070" expanded="true" signature="1141:1206" ph="SELECT P_ID,... product" />
-            <marker date="1464003703070" expanded="true" signature="1141:1218" ph="SELECT P_ID,... product" />
-            <marker date="1464003703070" expanded="true" signature="1141:1221" ph="SELECT P_ID,... product" />
+            <marker date="1464007162416" expanded="true" signature="1141:1218" ph="SELECT P_ID,... product" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/allproducts.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="112" column="32" selection-start-line="112" selection-start-column="32" selection-end-line="112" selection-end-column="32" />
+        <state relative-caret-position="153">
+          <caret line="105" column="26" selection-start-line="105" selection-start-column="26" selection-end-line="105" selection-end-column="26" />
           <folding>
             <element signature="e#214#362#0#JSP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/S_allproduct.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="53" column="17" selection-start-line="50" selection-start-column="16" selection-end-line="53" selection-end-column="17" />
-          <folding>
-            <element signature="method#doPost#0;class#S_allproduct#0" expanded="false" />
-            <marker date="1463951579039" expanded="true" signature="1186:1230" ph="SELECT P_ID,... product" />
+            <marker date="1464009432518" expanded="true" signature="369:6313" ph="..." />
+            <marker date="1464009432518" expanded="true" signature="1438:6305" ph="..." />
+            <marker date="1464009432518" expanded="true" signature="3691:6192" ph="..." />
+            <marker date="1464009432518" expanded="true" signature="3737:6185" ph="..." />
+            <marker date="1464009432518" expanded="true" signature="4047:6106" ph="..." />
+            <marker date="1464009432518" expanded="true" signature="4074:6095" ph="..." />
+            <marker date="1464009432518" expanded="true" signature="4943:6080" ph="..." />
+            <marker date="1464009432518" expanded="true" signature="5333:6061" ph="..." />
+            <marker date="1464009432518" expanded="true" signature="5371:6038" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/productview.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+        <state relative-caret-position="83">
+          <caret line="67" column="32" selection-start-line="67" selection-start-column="32" selection-end-line="67" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/cart.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="47" column="170" selection-start-line="47" selection-start-column="170" selection-end-line="47" selection-end-column="170" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/signup.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="177" column="20" selection-start-line="177" selection-start-column="20" selection-end-line="177" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/S_cart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
           <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
+            <marker date="1464010332418" expanded="true" signature="1078:1148" ph="SELECT P_ID,... product" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/S_signup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="117" column="36" selection-start-line="117" selection-start-column="36" selection-end-line="117" selection-end-column="36" />
+          <folding>
+            <marker date="1464007162420" expanded="true" signature="3631:3806" ph="INSERT INTO cust_info... " />
           </folding>
         </state>
       </provider>
